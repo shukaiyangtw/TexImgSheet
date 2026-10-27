@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <title>使用說明 - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <script type="text/javascript">
+        function onTocClicked() {
+             let toc = document.getElementById("toc_div");
+             if (toc.style.display == "block") {  toc.style.display = "none";  }
+             else {  toc.style.display = "block";  }
+        }
+    </script>
+</head>
+
+<body>
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+            <div class="action_bar_button">
+                <a href="https://shukaiyangtw.github.io/index_zh.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="https://shukaiyangtw.github.io/index_zh.htm">首頁</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">目錄</a>
+            </div>
+
+            <div class="action_bar_title">
+                使用說明</div>
+
+            <div class="action_bar_button">
+                <a href="howtouse_en.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="howtouse_en.htm">English</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div"><ul>
+            <li><a href="index_zh.htm">簡介</a></li>
+
+            <li><a class="toc_current" href="howtouse_zh.htm">使用說明</a></li>
+
+        </ul></div>
+
+        <div class="content_div">
+
+<h2>使用說明</h2>
+<p>用一個例子來說明，準備了以下四張圖片:</p>
+<table>
+<thead>
+<tr>
+<th>檔名</th>
+<th>圖片</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flame0.png</td>
+<td><img src="example/flame0.png" style="max-width:128px" alt="An example picture" /></td>
+</tr>
+<tr>
+<td>flame1.png</td>
+<td><img src="example/flame1.png" style="max-width:128px" alt="Anexample picture" /></td>
+</tr>
+<tr>
+<td>flame2.png</td>
+<td><img src="example/flame2.png" style="max-width:128px" alt="Anexample picture" /></td>
+</tr>
+<tr>
+<td>flame3.png</td>
+<td><img src="example/flame3.png" style="max-width:128px" alt="Anexample picture" /></td>
+</tr>
+</tbody>
+</table>
+<p>接著在相同目錄下準備了一個 <a download="flame.xml" href="example/flame.xml">flame.xml</a> 檔案，內容如下:</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;sheet&gt;
+  &lt;canvas rows=&quot;1&quot; cols=&quot;4&quot; cellwidth=&quot;512&quot; cellheight=&quot;512&quot; /&gt;
+  &lt;sprites&gt;
+    &lt;img row=&quot;0&quot; col=&quot;0&quot; src=&quot;flame0.png&quot; /&gt;
+    &lt;img row=&quot;0&quot; col=&quot;1&quot; src=&quot;flame1.png&quot; /&gt;
+    &lt;img row=&quot;0&quot; col=&quot;2&quot; src=&quot;flame2.png&quot; /&gt;
+    &lt;img row=&quot;0&quot; col=&quot;3&quot; src=&quot;flame3.png&quot; /&gt;
+  &lt;/sprites&gt;
+&lt;/sheet&gt;
+</code></pre>
+<p>將這個檔案拖曳到如下的本軟體畫面中，應該會看到 frame.xml 檔案中的資訊被填入，如下圖所示:</p>
+<p><img src="images/screenshot.png" alt="The screen shot" /></p>
+<p>最後按下「Export PNG Now...」按鈕，獲得 frame.png 如下圖:</p>
+<p><img src="example/flame.png" alt="The result image" /></p>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

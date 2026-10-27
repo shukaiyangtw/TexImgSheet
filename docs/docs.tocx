@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <home lang="en" url="https://shukaiyangtw.github.io/index_en.htm">Home</home>
+  <home lang="zh" url="https://shukaiyangtw.github.io/index_zh.htm">首頁</home>
+  <toc>
+    <chapter name="index">
+      <title lang="en">Introduction</title>
+      <title lang="zh">簡介</title>
+    </chapter>
+    <chapter name="howtouse">
+      <title lang="en">How to Use</title>
+      <title lang="zh">使用說明</title>
+    </chapter>
+  </toc>
+</doc>

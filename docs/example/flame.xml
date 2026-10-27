@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sheet>
+  <canvas rows="1" cols="4" cellwidth="512" cellheight="512" />
+  <sprites>
+    <img row="0" col="0" src="flame0.png" />
+    <img row="0" col="1" src="flame1.png" />
+    <img row="0" col="2" src="flame2.png" />
+    <img row="0" col="3" src="flame3.png" />
+  </sprites>
+</sheet>

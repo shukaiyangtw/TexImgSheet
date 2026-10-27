@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>How to Use - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <script type="text/javascript">
+        function onTocClicked() {
+             let toc = document.getElementById("toc_div");
+             if (toc.style.display == "block") {  toc.style.display = "none";  }
+             else {  toc.style.display = "block";  }
+        }
+    </script>
+</head>
+
+<body>
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+            <div class="action_bar_button">
+                <a href="https://shukaiyangtw.github.io/index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="https://shukaiyangtw.github.io/index_en.htm">Home</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                How to Use</div>
+
+            <div class="action_bar_button">
+                <a href="howtouse_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="howtouse_zh.htm">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div"><ul>
+            <li><a href="index_en.htm">Introduction</a></li>
+            <li><a class="toc_current" href="howtouse_en.htm">How to Use</a></li>
+        </ul></div>
+
+        <div class="content_div">
+
+<h2>How to Use</h2>
+<p>To illustrate with an example, the following four images are prepared:</p>
+<table>
+<thead>
+<tr>
+<th>File name</th>
+<th>Pictures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flame0.png</td>
+<td><img src="example/flame0.png" style="max-width:128px" alt="An example picture" /></td>
+</tr>
+<tr>
+<td>flame1.png</td>
+<td><img src="example/flame1.png" style="max-width:128px" alt="Anexample picture" /></td>
+</tr>
+<tr>
+<td>flame2.png</td>
+<td><img src="example/flame2.png" style="max-width:128px" alt="Anexample picture" /></td>
+</tr>
+<tr>
+<td>flame3.png</td>
+<td><img src="example/flame3.png" style="max-width:128px" alt="Anexample picture" /></td>
+</tr>
+</tbody>
+</table>
+<p>Next, prepare a <a download="flame.xml" href="example/flame.xml">flame.xml</a> file in the same directory, with the following contents:</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;sheet&gt;
+  &lt;canvas rows=&quot;1&quot; cols=&quot;4&quot; cellwidth=&quot;512&quot; cellheight=&quot;512&quot; /&gt;
+  &lt;sprites&gt;
+    &lt;img row=&quot;0&quot; col=&quot;0&quot; src=&quot;flame0.png&quot; /&gt;
+    &lt;img row=&quot;0&quot; col=&quot;1&quot; src=&quot;flame1.png&quot; /&gt;
+    &lt;img row=&quot;0&quot; col=&quot;2&quot; src=&quot;flame2.png&quot; /&gt;
+    &lt;img row=&quot;0&quot; col=&quot;3&quot; src=&quot;flame3.png&quot; /&gt;
+  &lt;/sprites&gt;
+&lt;/sheet&gt;
+</code></pre>
+<p>Drag this file onto the software screen below. You should see the information in the frame.xml file filled in, as shown in the figure below:</p>
+<p><img src="images/screenshot.png" alt="The screen shot" /></p>
+<p>Finally, click the &quot;Export PNG Now...&quot; button to get a frame.png as shown below:</p>
+<p><img src="example/flame.png" alt="The result image" /></p>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
